@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@execonline-inc/resource": "^6.19.0",
+    "@execonline-inc/collections": "^10.5.0",
+    "@kofno/piper": "4.3.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,13 +17,24 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.8.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "mobx": "^6.6.2",
+    "mobx-react": "^7.5.3",
+    "maybeasy": "^4.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 100
   },
   "eslintConfig": {
     "extends": [
